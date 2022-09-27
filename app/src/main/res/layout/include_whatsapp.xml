@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end|bottom">
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/right_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        fab:fab_addButtonSize="mini"
+        fab:fab_expandDirection="up"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:fab_labelsPosition="left">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/whatsapp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:backgroundTint="@color/black"
+            fab:fabSize="mini"
+            fab:fab_colorNormal="@color/black"
+            fab:fab_colorPressed="@color/black"
+            fab:fab_icon="@drawable/whatsapp"
+            fab:fab_title="Whatsapp Support" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/app_suport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:backgroundTint="@color/black"
+            fab:fabSize="mini"
+            fab:fab_colorNormal="@color/black"
+            fab:fab_colorPressed="@color/black"
+            fab:fab_icon="@drawable/ic_baseline_perm_device_information_24"
+            fab:fab_title="App Support" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

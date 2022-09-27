@@ -1,0 +1,4 @@
+include ':library'
+include ':etteluor'
+include ':app'
+rootProject.name = "LS Matka"

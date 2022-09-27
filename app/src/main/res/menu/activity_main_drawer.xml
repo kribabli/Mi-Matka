@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Points">
+            <menu>
+                <item
+                    android:id="@+id/nav_add_points"
+                    android:icon="@drawable/add_wallet_img"
+                    android:title="Add Points" />
+
+                <item
+                    android:id="@+id/nav_withdraw_points"
+                    android:icon="@drawable/minus_wallet_img"
+                    android:title="Withdraw Points" />
+
+            </menu>
+
+        </item>
+
+    </group>
+
+    <item android:title="History">
+        <menu>
+
+            <item
+                android:id="@+id/nav_wallet_page"
+                android:icon="@drawable/wallet_img"
+                android:title="Wallet Page"
+                android:visible="false" />
+
+            <item
+                android:id="@+id/nav_bid_history"
+                android:icon="@drawable/wallet_img"
+                android:title="Bid History" />
+
+            <item
+                android:id="@+id/nav_wining_history"
+                android:icon="@drawable/wallet_img"
+                android:title="Winning History" />
+
+            <item
+                android:id="@+id/nav_transaction_history"
+                android:icon="@drawable/wallet_img"
+                android:title="Transactions History" />
+
+            <item
+                android:id="@+id/nav_withdraw_history"
+                android:icon="@drawable/wallet_img"
+                android:title="Withdraw History" />
+
+            <item
+                android:id="@+id/nav_history_page"
+                android:visible="false"
+                android:icon="@drawable/clock_img"
+                android:title="History Page" />
+
+
+        </menu>
+    </item>
+
+    <item android:title="Profile">
+        <menu>
+
+            <item
+                android:id="@+id/nav_profile_page"
+                android:icon="@drawable/user_img"
+                android:title="Profile Page" />
+
+            <item
+                android:id="@+id/nav_bank_details"
+                android:icon="@drawable/bank_img"
+                android:title="Bank Details" />
+
+            <item
+                android:id="@+id/nav_paytm_details"
+                android:icon="@drawable/paytm_img"
+                android:title="Paytm Details" />
+
+            <item
+                android:id="@+id/nav_phonepe_details"
+                android:icon="@drawable/phone_pe_img"
+                android:title="PhonePe Details" />
+
+
+            <item
+                android:id="@+id/nav_google_details"
+                android:icon="@drawable/gpay_img"
+                android:title="Google Details" />
+
+
+        </menu>
+    </item>
+
+
+    <item android:title="More">
+        <menu>
+
+            <item
+                android:id="@+id/nav_contact_and_support"
+                android:icon="@drawable/contact_img"
+                android:title="Contact &amp; Support" />
+
+            <item
+                android:id="@+id/nav_winning_ratio"
+                android:icon="@drawable/document_img"
+                android:title="Game Rate" />
+
+            <item
+                android:id="@+id/nav_notification"
+                android:icon="@drawable/bell_img"
+                android:title="Notification" />
+
+            <item
+                android:id="@+id/nav_noticboard"
+                android:icon="@drawable/noticeboard_img"
+                android:title="Noticeboard"
+                android:visible="false" />
+
+            <item
+                android:id="@+id/nav_how_to_play"
+                android:icon="@drawable/play_btn_img"
+                android:title="How to Play"
+                android:visible="false" />
+
+            <item
+                android:id="@+id/nav_share_app"
+                android:icon="@drawable/share_img"
+                android:title="Share App"
+                android:visible="false" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_img"
+                android:title="Logout" />
+
+        </menu>
+    </item>
+
+
+    <item android:title="More info">
+        <menu>
+
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/googleg_standard_color_18"
+                android:title="Rate App" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share_img"
+                android:title="Share" />
+
+
+        </menu>
+    </item>
+
+</menu>

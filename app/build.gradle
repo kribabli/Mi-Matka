@@ -1,0 +1,133 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.a2.matka"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 2
+        versionName "2.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
+
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true   // Obfuscate and minify codes
+            shrinkResources true // Remove unused resourcesexcel
+            useProguard true     // Remove unused codes
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false   // Obfuscate and minify codes
+
+
+        }
+    }
+
+    buildTypes.each {
+        it.buildConfigField 'String', 'androidx', android_life
+        it.resValue 'string', 'androidx', android_life
+        it.buildConfigField 'String', 'android_name', android_name
+        it.resValue 'string', 'android_name', android_name
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    buildscript {
+        configurations.all {
+            resolutionStrategy {
+                force 'net.sf.proguard:proguard-gradle:5.3.3'
+            }
+        }
+    }
+
+    configurations {
+        compile.exclude group: "junit", module: "junit"
+    }
+
+    configurations {
+        cleanedAnnotations
+        compile.exclude group: 'org.jetbrains', module: 'annotations'
+    }
+
+    android {
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'com.loopj.android:android-async-http:1.4.10'
+
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.google.android:flexbox:2.0.0'
+
+    implementation 'com.appolica:flubber:1.0.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.24'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+    implementation 'com.google.firebase:firebase-firestore:23.0.3'
+
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-core:19.0.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
+
+    implementation 'com.github.marcoscgdev:MaterialToast:1.0.1'
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    implementation 'me.relex:circleindicator:2.1.6'
+    implementation 'org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.0.5'
+    implementation 'com.whiteelephant:monthandyearpicker:1.3.0'
+    implementation 'com.github.AppSync-ai:AppSync:61'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.6.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0@aar'
+
+    implementation project(path: ':library')
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

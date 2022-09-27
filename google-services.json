@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "437323565281",
+    "project_id": "kingmatka-390aa",
+    "storage_bucket": "kingmatka-390aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437323565281:android:099db0c8f2f434b4b70fa0",
+        "android_client_info": {
+          "package_name": "com.king.maker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437323565281-08pomjdqmmdnd9lqr96809frd3ampuvk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.king.maker",
+            "certificate_hash": "db449ad38e0855d46b5affd463800ab43c0a1626"
+          }
+        },
+        {
+          "client_id": "437323565281-ik6633pcit5jp3qm4a94fpcntp7inocr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQsqKvwQy1pVnmq2FFGP8k6VMGlCQhGFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437323565281-ik6633pcit5jp3qm4a94fpcntp7inocr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
